@@ -16,6 +16,11 @@
                     "type": "path",
                     "relative": true,
                     "path": ".spinetoolbox/specifications/Importer/flextool3_excel_input.json"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Importer/import_truncated.json"
                 }
             ],
             "Exporter": [
@@ -282,99 +287,18 @@
                     "known_filters": {
                         "db_url@Input_data": {
                             "scenario_filter": {
-                                "5weeks_invest_fullYear_dispatch_coal_wind": false,
-                                "aggregate_outputs_network_coal_wind_chp": false,
-                                "all": false,
                                 "base": true,
-                                "capacity_margin": false,
-                                "coal": false,
-                                "coal_chp": false,
-                                "coal_co2": false,
-                                "coal_min_load": false,
-                                "coal_min_load_MIP_wind": false,
-                                "coal_min_load_wind": false,
-                                "coal_ramp_limit": false,
-                                "coal_retire": false,
-                                "coal_wind_ev": false,
-                                "coal_wind_inertia": false,
-                                "dr_decrease_demand": false,
-                                "dr_increase_demand": false,
-                                "dr_shift_demand": false,
-                                "fullYear": false,
-                                "fusion": false,
-                                "multi_fullYear_battery": false,
-                                "multi_fullYear_battery_nested_24h_invest_one_solve": false,
-                                "multi_fullYear_battery_nested_multi_invest": false,
-                                "multi_fullYear_battery_nested_sample_invest_one_solve": false,
-                                "multi_year": false,
-                                "multi_year_one_solve": false,
-                                "multi_year_one_solve_battery": false,
-                                "multi_year_one_solve_co2_limit": false,
-                                "network_coal_wind": false,
-                                "network_coal_wind_battery_co2_fullYear_availability": false,
-                                "network_coal_wind_battery_invest_cumulative": false,
-                                "network_coal_wind_capacity_margin": false,
-                                "network_coal_wind_reserve": false,
-                                "network_coal_wind_reserve_co2_capacity_margin": false,
-                                "network_coal_wind_reserve_n_1": false,
-                                "network_wind_coal_battery_fullYear_invest": false,
-                                "scale_to_peak_flow": false,
-                                "water_pump": false,
-                                "wind": false,
-                                "wind_battery": false,
-                                "wind_battery_invest": false,
-                                "wind_battery_invest_lifetime_choice": false,
-                                "wind_battery_invest_lifetime_renew": false,
-                                "wind_battery_invest_lifetime_renew_4solve": false
+                                "invest": true,
+                                "invest_cheap_PV": true,
+                                "test": false
                             },
                             "alternative_filter": {
-                                "5weeks": true,
-                                "5weeks_only_invest": true,
-                                "aggregate_outputs": true,
-                                "availability": true,
-                                "battery": true,
-                                "battery_invest": true,
-                                "capacity_margin": true,
-                                "co2_limit": true,
-                                "co2_price": true,
-                                "coal": true,
-                                "coal_chp": true,
-                                "coal_invest": true,
-                                "coal_min_load": true,
-                                "coal_min_load_MIP": true,
-                                "coal_ramp": true,
-                                "cumulative_investment": true,
-                                "dr_decrease_demand": true,
-                                "dr_increase_demand": true,
-                                "dr_shift_demand": true,
-                                "ev": true,
-                                "fullYear": true,
-                                "fullYear_invest_24h": true,
-                                "fullYear_invest_sample": true,
-                                "fullYear_multi_invest": true,
-                                "fullYear_roll": true,
-                                "fullYear_storage_6h": true,
-                                "fusion": true,
-                                "group_wind_coal_max_invest": true,
-                                "heat": true,
-                                "inertia": true,
-                                "init": true,
-                                "lifetime_choice": true,
-                                "lifetime_renew": true,
-                                "multi_fullYear_one_solve": true,
-                                "multi_year": true,
-                                "multi_year_one_solve": true,
-                                "nested_solve_storage": true,
-                                "network": true,
-                                "reserve": true,
-                                "reserve_n_1": true,
-                                "retire": true,
-                                "scale_to_peak_flow": true,
-                                "unlimited_investment": true,
-                                "water_pump": true,
-                                "west": true,
-                                "wind": true,
-                                "wind_invest": true
+                                "Base": true,
+                                "base": true,
+                                "base_2030": true,
+                                "cheap_PV": true,
+                                "invest": true,
+                                "test": true
                             }
                         }
                     },
@@ -445,6 +369,67 @@
                         "scenario_filter": true
                     }
                 }
+            },
+            {
+                "name": "from bulgaria_data to Importer",
+                "from": [
+                    "bulgaria_data",
+                    "right"
+                ],
+                "to": [
+                    "Importer",
+                    "left"
+                ],
+                "filter_settings": {
+                    "known_filters": {},
+                    "auto_online": true,
+                    "enabled_filter_types": {
+                        "alternative_filter": false,
+                        "scenario_filter": true
+                    }
+                }
+            },
+            {
+                "name": "from Importer to Input_data",
+                "from": [
+                    "Importer",
+                    "bottom"
+                ],
+                "to": [
+                    "Input_data",
+                    "left"
+                ],
+                "options": {
+                    "purge_before_writing": true,
+                    "purge_settings": {
+                        "alternative": false,
+                        "scenario": false,
+                        "scenario_alternative": false,
+                        "entity_class": false,
+                        "display_mode": false,
+                        "entity_class_display_mode": false,
+                        "superclass_subclass": false,
+                        "entity": true,
+                        "entity_group": true,
+                        "entity_alternative": true,
+                        "parameter_value_list": false,
+                        "list_value": false,
+                        "parameter_definition": false,
+                        "parameter_type": false,
+                        "parameter_value": true,
+                        "metadata": true,
+                        "entity_metadata": true,
+                        "parameter_value_metadata": true
+                    }
+                },
+                "filter_settings": {
+                    "known_filters": {},
+                    "auto_online": true,
+                    "enabled_filter_types": {
+                        "alternative_filter": false,
+                        "scenario_filter": true
+                    }
+                }
             }
         ],
         "jumps": []
@@ -453,16 +438,16 @@
         "Input_data": {
             "type": "Data Store",
             "description": "",
-            "x": -164.93424511281742,
-            "y": -11.557171971618484,
+            "x": -195.28045570838768,
+            "y": -42.28412171155411,
             "url": {
                 "dialect": "sqlite",
                 "host": "",
                 "port": "",
                 "database": {
                     "type": "path",
-                    "relative": true,
-                    "path": "input_data.sqlite"
+                    "relative": false,
+                    "path": "c:/juha/bulgaria/bulgaria.sqlite"
                 },
                 "schema": ""
             }
@@ -470,8 +455,8 @@
         "Export_to_CSV": {
             "type": "Exporter",
             "description": "",
-            "x": -36.25095408094956,
-            "y": -10.000422624284283,
+            "x": -45.75111530694463,
+            "y": -29.41165906405339,
             "output_time_stamps": false,
             "cancel_on_error": true,
             "output_labels": [
@@ -577,13 +562,13 @@
         "Excel input": {
             "type": "Data Connection",
             "description": "",
-            "x": -436.8582078041219,
-            "y": -50.02852490816406,
+            "x": -489.75241686840576,
+            "y": -50.02852490816405,
             "file_references": [
                 {
                     "type": "path",
                     "relative": true,
-                    "path": "example_input.xlsx"
+                    "path": "generacion BIO.xlsx"
                 }
             ],
             "db_references": []
@@ -608,14 +593,14 @@
         "Replace with Excel input": {
             "type": "Importer",
             "description": "",
-            "x": -310.39469337686535,
-            "y": -49.61188242041004,
+            "x": -351.0825465032376,
+            "y": -48.59468609225073,
             "specification": "FlexTool3_Excel_input",
             "cancel_on_error": false,
             "on_conflict": "replace",
             "file_selection": [
                 [
-                    "<project>/example_input.xlsx",
+                    "<project>/generacion BIO.xlsx",
                     true
                 ]
             ]
@@ -630,13 +615,42 @@
         "FlexTool": {
             "type": "Tool",
             "description": "",
-            "x": 74.07290183373073,
-            "y": -3.8356283679023413,
+            "x": 74.06553238013866,
+            "y": -33.07768139904366,
             "specification": "FlexTool3",
             "execute_in_work": true,
             "cmd_line_args": [],
             "kill_completed_processes": false,
             "log_process_output": false
+        },
+        "bulgaria_data": {
+            "type": "Data Connection",
+            "description": "",
+            "x": -438.3997777088384,
+            "y": -174.03142690866014,
+            "file_references": [
+                {
+                    "type": "path",
+                    "relative": false,
+                    "path": "C:/juha/bulgaria/Bulgaria_data.xlsx"
+                }
+            ],
+            "db_references": []
+        },
+        "Importer": {
+            "type": "Importer",
+            "description": "",
+            "x": -296.9495924962688,
+            "y": -174.28004071148828,
+            "specification": "import truncated",
+            "cancel_on_error": false,
+            "on_conflict": "merge",
+            "file_selection": [
+                [
+                    "C:\\juha\\bulgaria\\Bulgaria_data.xlsx",
+                    true
+                ]
+            ]
         }
     }
 }

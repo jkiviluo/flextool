@@ -85,7 +85,16 @@
                                 "value": "connection",
                                 "skip_columns": [
                                     0,
-                                    1
+                                    1,
+                                    9,
+                                    10,
+                                    11,
+                                    12,
+                                    13,
+                                    14,
+                                    15,
+                                    16,
+                                    17
                                 ]
                             },
                             {
@@ -167,6 +176,186 @@
                             {
                                 "map_type": "EntityMetadata",
                                 "position": "hidden"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "constraint_sense": {
+                        "mapping": [
+                            {
+                                "map_type": "EntityClass",
+                                "position": "hidden",
+                                "value": "constraint",
+                                "read_start_row": 1
+                            },
+                            {
+                                "map_type": "Entity",
+                                "position": 9
+                            },
+                            {
+                                "map_type": "EntityMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": "hidden",
+                                "value": "base"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "hidden",
+                                "value": "sense"
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": 10
+                            }
+                        ]
+                    }
+                },
+                {
+                    "constraint_constant": {
+                        "mapping": [
+                            {
+                                "map_type": "EntityClass",
+                                "position": "hidden",
+                                "value": "constraint",
+                                "read_start_row": 1
+                            },
+                            {
+                                "map_type": "Entity",
+                                "position": 9
+                            },
+                            {
+                                "map_type": "EntityMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": "hidden",
+                                "value": "base"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "hidden",
+                                "value": "constant"
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": 11
+                            }
+                        ]
+                    }
+                },
+                {
+                    "constraint_node_coefficient": {
+                        "mapping": [
+                            {
+                                "map_type": "EntityClass",
+                                "position": "hidden",
+                                "value": "node",
+                                "read_start_row": 1
+                            },
+                            {
+                                "map_type": "Entity",
+                                "position": 1
+                            },
+                            {
+                                "map_type": "EntityMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": "hidden",
+                                "value": "base"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "hidden",
+                                "value": "constraint_capacity_coefficient"
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValueType",
+                                "position": "hidden",
+                                "value": "map"
+                            },
+                            {
+                                "map_type": "IndexName",
+                                "position": "hidden",
+                                "value": "constraint"
+                            },
+                            {
+                                "map_type": "ParameterValueIndex",
+                                "position": 9
+                            },
+                            {
+                                "map_type": "ExpandedValue",
+                                "position": 12
+                            }
+                        ]
+                    }
+                },
+                {
+                    "constraint_connection_coefficient": {
+                        "mapping": [
+                            {
+                                "map_type": "EntityClass",
+                                "position": "hidden",
+                                "value": "connection",
+                                "read_start_row": 1
+                            },
+                            {
+                                "map_type": "Entity",
+                                "position": 2
+                            },
+                            {
+                                "map_type": "EntityMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": "hidden",
+                                "value": "base"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "hidden",
+                                "value": "constraint_capacity_coefficient"
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValueType",
+                                "position": "hidden",
+                                "value": "map"
+                            },
+                            {
+                                "map_type": "IndexName",
+                                "position": "hidden",
+                                "value": "constraint"
+                            },
+                            {
+                                "map_type": "ParameterValueIndex",
+                                "position": 9
+                            },
+                            {
+                                "map_type": "ExpandedValue",
+                                "position": 13
                             }
                         ]
                     }
@@ -262,29 +451,9 @@
                     }
                 }
             ],
-            "plants": [
-                {
-                    "Mapping 1": {
-                        "mapping": [
-                            {
-                                "map_type": "EntityClass",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "Entity",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "EntityMetadata",
-                                "position": "hidden"
-                            }
-                        ]
-                    }
-                }
-            ],
             "plants_agg": [
                 {
-                    "data": {
+                    "data_unit": {
                         "mapping": [
                             {
                                 "map_type": "EntityClass",
@@ -303,12 +472,99 @@
                                     9,
                                     10,
                                     11,
-                                    12
+                                    12,
+                                    21,
+                                    22,
+                                    23,
+                                    24
                                 ]
                             },
                             {
                                 "map_type": "Entity",
                                 "position": 13
+                            },
+                            {
+                                "map_type": "EntityMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": "hidden",
+                                "value": "base"
+                            },
+                            {
+                                "map_type": "EntityAlternativeActivity",
+                                "position": "hidden",
+                                "value": "true"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": -1
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": "hidden"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "data_output_flow": {
+                        "mapping": [
+                            {
+                                "map_type": "EntityClass",
+                                "position": "hidden",
+                                "value": "unit__outputNode",
+                                "skip_columns": [
+                                    0,
+                                    1,
+                                    2,
+                                    3,
+                                    4,
+                                    5,
+                                    6,
+                                    7,
+                                    8,
+                                    9,
+                                    10,
+                                    11,
+                                    12,
+                                    14,
+                                    15,
+                                    16,
+                                    17,
+                                    18,
+                                    19,
+                                    20,
+                                    23,
+                                    24
+                                ]
+                            },
+                            {
+                                "map_type": "Dimension",
+                                "position": "hidden",
+                                "value": "unit"
+                            },
+                            {
+                                "map_type": "Dimension",
+                                "position": "hidden",
+                                "value": "node"
+                            },
+                            {
+                                "map_type": "Entity",
+                                "position": 13
+                            },
+                            {
+                                "map_type": "Element",
+                                "position": 13
+                            },
+                            {
+                                "map_type": "Element",
+                                "position": 0
                             },
                             {
                                 "map_type": "EntityMetadata",
@@ -483,26 +739,6 @@
                             {
                                 "map_type": "ParameterValue",
                                 "position": 5
-                            }
-                        ]
-                    }
-                }
-            ],
-            "plants_pivot": [
-                {
-                    "Mapping 1": {
-                        "mapping": [
-                            {
-                                "map_type": "EntityClass",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "Entity",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "EntityMetadata",
-                                "position": "hidden"
                             }
                         ]
                     }
@@ -1348,26 +1584,6 @@
                     }
                 }
             ],
-            "plants_agg_old": [
-                {
-                    "Mapping 1": {
-                        "mapping": [
-                            {
-                                "map_type": "EntityClass",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "Entity",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "EntityMetadata",
-                                "position": "hidden"
-                            }
-                        ]
-                    }
-                }
-            ],
             "solve_period": [
                 {
                     "realized_periods": {
@@ -1894,6 +2110,77 @@
                         ]
                     }
                 }
+            ],
+            "group_period": [
+                {
+                    "Mapping 1": {
+                        "mapping": [
+                            {
+                                "map_type": "EntityClass",
+                                "position": "hidden",
+                                "value": "group"
+                            },
+                            {
+                                "map_type": "Entity",
+                                "position": 0
+                            },
+                            {
+                                "map_type": "EntityMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 2
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": -1
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValueType",
+                                "position": "hidden",
+                                "value": "map"
+                            },
+                            {
+                                "map_type": "IndexName",
+                                "position": "hidden",
+                                "value": "period"
+                            },
+                            {
+                                "map_type": "ParameterValueIndex",
+                                "position": 1
+                            },
+                            {
+                                "map_type": "ExpandedValue",
+                                "position": "hidden"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "constraint": [
+                {
+                    "Mapping 1": {
+                        "mapping": [
+                            {
+                                "map_type": "EntityClass",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "Entity",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "EntityMetadata",
+                                "position": "hidden"
+                            }
+                        ]
+                    }
+                }
             ]
         },
         "selected_tables": [
@@ -1916,10 +2203,10 @@
             "timeblockSet",
             "solve_sequence",
             "model_settings",
-            "model_solves"
+            "model_solves",
+            "group_period"
         ],
         "table_options": {
-            "plants": {},
             "nodes": {
                 "read_until_col": true
             },
@@ -1932,7 +2219,6 @@
                 "column": 7,
                 "read_until_col": true
             },
-            "plants_pivot": {},
             "plants_agg": {
                 "column": 0,
                 "read_until_col": true,
@@ -1958,7 +2244,6 @@
                 "read_until_col": false
             },
             "group_node": {},
-            "plants_agg_old": {},
             "solve_period": {},
             "solve_sequence": {
                 "read_until_col": false,
@@ -1976,7 +2261,9 @@
             "min_profile": {
                 "read_until_col": false,
                 "read_until_row": false
-            }
+            },
+            "group_period": {},
+            "constraint": {}
         },
         "table_types": {
             "nodes": {
@@ -1999,7 +2286,8 @@
                 "2": "float",
                 "3": "float",
                 "4": "float",
-                "5": "float"
+                "5": "float",
+                "6": "float"
             },
             "node_to_node": {
                 "0": "string",
@@ -2009,57 +2297,13 @@
                 "4": "float",
                 "5": "float",
                 "6": "float",
-                "7": "float"
-            },
-            "plants": {
-                "0": "string",
-                "1": "string",
-                "2": "string",
-                "3": "string",
-                "4": "string",
-                "5": "string",
-                "6": "string",
-                "7": "string",
+                "7": "float",
                 "8": "string",
                 "9": "string",
                 "10": "string",
-                "11": "string",
-                "12": "string",
-                "13": "string",
-                "14": "string",
-                "15": "string",
-                "16": "string",
-                "17": "string",
-                "18": "string",
-                "19": "string",
-                "20": "string",
-                "21": "string",
-                "22": "string",
-                "23": "string",
-                "24": "string",
-                "25": "string",
-                "26": "string",
-                "27": "string",
-                "28": "string",
-                "29": "string",
-                "30": "string",
-                "31": "string",
-                "32": "string",
-                "33": "string",
-                "34": "string",
-                "35": "string",
-                "36": "string",
-                "37": "string",
-                "38": "string",
-                "39": "string",
-                "40": "string",
-                "41": "string",
-                "42": "string",
-                "43": "string",
-                "44": "string",
-                "45": "string",
-                "46": "string",
-                "47": "string"
+                "11": "float",
+                "12": "float",
+                "13": "float"
             },
             "plants_agg": {
                 "0": "string",
@@ -2077,7 +2321,16 @@
                 "12": "string",
                 "13": "string",
                 "14": "float",
-                "15": "float"
+                "15": "float",
+                "16": "float",
+                "17": "float",
+                "18": "float",
+                "19": "float",
+                "20": "string",
+                "21": "float",
+                "22": "float",
+                "23": "float",
+                "24": "float"
             },
             "generation 2019": {
                 "0": "string",
@@ -2182,13 +2435,6 @@
                 "0": "string",
                 "1": "string"
             },
-            "plants_pivot": {
-                "0": "string",
-                "1": "string",
-                "2": "string",
-                "3": "string",
-                "4": "string"
-            },
             "solve_period": {
                 "0": "string",
                 "1": "string",
@@ -2199,18 +2445,6 @@
                 "6": "string",
                 "7": "string",
                 "8": "string"
-            },
-            "plants_agg_old": {
-                "0": "string",
-                "1": "string",
-                "2": "string",
-                "3": "string",
-                "4": "string",
-                "5": "string",
-                "6": "string",
-                "7": "string",
-                "8": "string",
-                "9": "string"
             },
             "solve_sequence": {
                 "0": "string",
@@ -2299,7 +2533,7 @@
                 "7": "float",
                 "8": "float",
                 "9": "string",
-                "10": "float"
+                "10": "string"
             },
             "min_profile": {
                 "0": "string",
@@ -2308,6 +2542,15 @@
                 "3": "string",
                 "4": "float",
                 "5": "float"
+            },
+            "group_period": {
+                "0": "string",
+                "1": "string",
+                "2": "string",
+                "3": "float",
+                "4": "float",
+                "5": "float",
+                "6": "float"
             }
         },
         "table_default_column_type": {
@@ -2319,7 +2562,9 @@
             "model_settings": "string",
             "new_invest": "float",
             "model_solves": "string",
-            "plants_agg": "float"
+            "plants_agg": "float",
+            "group_period": "float",
+            "cf 2019": "float"
         },
         "table_row_types": {
             "cf 2019": {

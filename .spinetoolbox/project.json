@@ -289,7 +289,7 @@
                             "scenario_filter": {
                                 "base": true,
                                 "invest": true,
-                                "invest_cheap_PV": true,
+                                "invest_cheap_PV": false,
                                 "test": false
                             },
                             "alternative_filter": {
@@ -298,6 +298,8 @@
                                 "base_2030": true,
                                 "cheap_PV": true,
                                 "invest": true,
+                                "p2025": true,
+                                "p2030": true,
                                 "test": true
                             }
                         }
@@ -439,7 +441,7 @@
             "type": "Data Store",
             "description": "",
             "x": -195.28045570838768,
-            "y": -42.28412171155411,
+            "y": -42.2841217115541,
             "url": {
                 "dialect": "sqlite",
                 "host": "",
@@ -615,8 +617,8 @@
         "FlexTool": {
             "type": "Tool",
             "description": "",
-            "x": 74.06553238013866,
-            "y": -33.07768139904366,
+            "x": 73.04298975538148,
+            "y": -31.388683015286354,
             "specification": "FlexTool3",
             "execute_in_work": true,
             "cmd_line_args": [],
@@ -640,8 +642,8 @@
         "Importer": {
             "type": "Importer",
             "description": "",
-            "x": -296.9495924962688,
-            "y": -174.28004071148828,
+            "x": -294.90450724675435,
+            "y": -174.28004071148834,
             "specification": "import truncated",
             "cancel_on_error": false,
             "on_conflict": "merge",

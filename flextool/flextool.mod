@@ -1058,7 +1058,7 @@ set process_reserve_upDown_node_active := {(p, r, ud, n) in process_reserve_upDo
 set prundt := {(p, r, ud, n) in process_reserve_upDown_node_active, (d, t) in dt};
 set pdt_online_linear := {p in process_online_linear, (d, t) in dt : pdProcess[p, 'startup_cost', d]};
 set pdt_online_integer := {p in process_online_integer, (d, t) in dt : pdProcess[p, 'startup_cost', d]};
-
+display process_reserve_upDown_node_active;
 param hours_in_period{d in period} := sum {(d, t) in dt} (step_duration[d, t]);
 param hours_in_solve := sum {(d, t) in dt} (step_duration[d, t]);
 param period_share_of_year{d in period} := hours_in_period[d] / 8760;
@@ -3903,7 +3903,7 @@ for {g in groupOutput_node, s in solve_current, d in d_realized_period: sum{(g, 
 	    / ( - sum{(g, n) in group_node} pdNodeInflow[n, d] / complete_period_share_of_year[d] )
 	>> fn_groupNode__d;
   }
-
+display complete_period_share_of_year;
 printf 'Write group results for realized time steps...\n';
 param fn_groupNode__dt symbolic := "output/group_node__period__t.csv";
 for {i in 1..1 : p_model['solveFirst']}

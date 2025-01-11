@@ -1,0 +1,101 @@
+{
+    "item_type": "Exporter",
+    "output_format": "Excel",
+    "name": "reserves",
+    "description": "",
+    "mappings": {
+        "reserve_average": {
+            "type": "entity_parameter_values",
+            "mapping": [
+                {
+                    "map_type": "FixedValue",
+                    "position": "table_name",
+                    "value": "reserve_average"
+                },
+                {
+                    "map_type": "EntityClass",
+                    "position": "hidden",
+                    "filter_re": "unit__reserve__upDown__node|connection__reserve__upDown__node"
+                },
+                {
+                    "map_type": "Dimension",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "Dimension",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "Dimension",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "Dimension",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "ParameterDefinition",
+                    "position": "hidden",
+                    "filter_re": "reservation_average"
+                },
+                {
+                    "map_type": "ParameterValueList",
+                    "position": "hidden",
+                    "ignorable": true
+                },
+                {
+                    "map_type": "Entity",
+                    "position": 0
+                },
+                {
+                    "map_type": "Element",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "Element",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "Element",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "Element",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "Alternative",
+                    "position": -1
+                },
+                {
+                    "map_type": "ParameterValueType",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "IndexName",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "ParameterValueIndex",
+                    "position": -2
+                },
+                {
+                    "map_type": "IndexName",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "ParameterValueIndex",
+                    "position": -3
+                },
+                {
+                    "map_type": "ExpandedValue",
+                    "position": 4
+                }
+            ],
+            "enabled": true,
+            "always_export_header": true,
+            "group_fn": "no_group",
+            "use_fixed_table_name": true
+        }
+    }
+}

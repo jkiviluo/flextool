@@ -149,7 +149,7 @@
                 },
                 {
                     "map_type": "Alternative",
-                    "position": -2
+                    "position": 0
                 },
                 {
                     "map_type": "ParameterValueType",
@@ -170,7 +170,7 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
-                    "position": 0
+                    "position": 1
                 },
                 {
                     "map_type": "IndexName",
@@ -178,7 +178,7 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
-                    "position": 1
+                    "position": 2
                 },
                 {
                     "map_type": "ExpandedValue",
@@ -294,11 +294,11 @@
                 },
                 {
                     "map_type": "Entity",
-                    "position": -2
+                    "position": -1
                 },
                 {
                     "map_type": "Alternative",
-                    "position": -3
+                    "position": 0
                 },
                 {
                     "map_type": "ParameterValueType",
@@ -310,15 +310,7 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
-                    "position": -1
-                },
-                {
-                    "map_type": "IndexName",
-                    "position": "hidden"
-                },
-                {
-                    "map_type": "ParameterValueIndex",
-                    "position": 0
+                    "position": -2
                 },
                 {
                     "map_type": "IndexName",
@@ -327,6 +319,14 @@
                 {
                     "map_type": "ParameterValueIndex",
                     "position": 1
+                },
+                {
+                    "map_type": "IndexName",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "ParameterValueIndex",
+                    "position": 2
                 },
                 {
                     "map_type": "ExpandedValue",
@@ -425,7 +425,7 @@
                 },
                 {
                     "map_type": "Entity",
-                    "position": -2
+                    "position": -4
                 },
                 {
                     "map_type": "Alternative",
@@ -442,23 +442,23 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
+                    "position": -2
+                },
+                {
+                    "map_type": "IndexName",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "ParameterValueIndex",
+                    "position": -3
+                },
+                {
+                    "map_type": "IndexName",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "ParameterValueIndex",
                     "position": 0
-                },
-                {
-                    "map_type": "IndexName",
-                    "position": "hidden"
-                },
-                {
-                    "map_type": "ParameterValueIndex",
-                    "position": 1
-                },
-                {
-                    "map_type": "IndexName",
-                    "position": "hidden"
-                },
-                {
-                    "map_type": "ParameterValueIndex",
-                    "position": 2
                 },
                 {
                     "map_type": "ExpandedValue",
@@ -620,7 +620,7 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
-                    "position": 2
+                    "position": 4
                 },
                 {
                     "map_type": "ExpandedValue",
@@ -673,23 +673,23 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
+                    "position": -3
+                },
+                {
+                    "map_type": "IndexName",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "ParameterValueIndex",
+                    "position": -4
+                },
+                {
+                    "map_type": "IndexName",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "ParameterValueIndex",
                     "position": 0
-                },
-                {
-                    "map_type": "IndexName",
-                    "position": "hidden"
-                },
-                {
-                    "map_type": "ParameterValueIndex",
-                    "position": 1
-                },
-                {
-                    "map_type": "IndexName",
-                    "position": "hidden"
-                },
-                {
-                    "map_type": "ParameterValueIndex",
-                    "position": 2
                 },
                 {
                     "map_type": "ExpandedValue",
@@ -726,11 +726,11 @@
                 },
                 {
                     "map_type": "Entity",
-                    "position": -2
+                    "position": 0
                 },
                 {
                     "map_type": "Alternative",
-                    "position": 0
+                    "position": -2
                 },
                 {
                     "map_type": "ParameterValueType",
@@ -751,7 +751,7 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
-                    "position": 1
+                    "position": -3
                 },
                 {
                     "map_type": "IndexName",
@@ -759,7 +759,7 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
-                    "position": 2
+                    "position": -4
                 },
                 {
                     "map_type": "ExpandedValue",
@@ -940,7 +940,7 @@
                 },
                 {
                     "map_type": "Alternative",
-                    "position": -3
+                    "position": 0
                 },
                 {
                     "map_type": "ParameterValueType",
@@ -961,14 +961,6 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
-                    "position": 0
-                },
-                {
-                    "map_type": "IndexName",
-                    "position": "hidden"
-                },
-                {
-                    "map_type": "ParameterValueIndex",
                     "position": 1
                 },
                 {
@@ -978,6 +970,14 @@
                 {
                     "map_type": "ParameterValueIndex",
                     "position": 2
+                },
+                {
+                    "map_type": "IndexName",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "ParameterValueIndex",
+                    "position": 3
                 },
                 {
                     "map_type": "ExpandedValue",
@@ -1100,6 +1100,14 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
+                    "position": -5
+                },
+                {
+                    "map_type": "IndexName",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "ParameterValueIndex",
                     "position": -3
                 },
                 {
@@ -1108,23 +1116,15 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
+                    "position": -4
+                },
+                {
+                    "map_type": "IndexName",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "ParameterValueIndex",
                     "position": 0
-                },
-                {
-                    "map_type": "IndexName",
-                    "position": "hidden"
-                },
-                {
-                    "map_type": "ParameterValueIndex",
-                    "position": 1
-                },
-                {
-                    "map_type": "IndexName",
-                    "position": "hidden"
-                },
-                {
-                    "map_type": "ParameterValueIndex",
-                    "position": 2
                 },
                 {
                     "map_type": "ExpandedValue",
@@ -1164,7 +1164,7 @@
                 },
                 {
                     "map_type": "Alternative",
-                    "position": -2
+                    "position": 0
                 },
                 {
                     "map_type": "ParameterValueType",
@@ -1177,7 +1177,7 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
-                    "position": 0
+                    "position": 1
                 },
                 {
                     "map_type": "IndexName",
@@ -1185,7 +1185,7 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
-                    "position": 1
+                    "position": 2
                 },
                 {
                     "map_type": "ExpandedValue",
@@ -1312,15 +1312,15 @@
                 },
                 {
                     "map_type": "Element",
-                    "position": -1
-                },
-                {
-                    "map_type": "Element",
                     "position": -2
                 },
                 {
-                    "map_type": "Alternative",
+                    "map_type": "Element",
                     "position": -3
+                },
+                {
+                    "map_type": "Alternative",
+                    "position": -1
                 },
                 {
                     "map_type": "ParameterValueType",
@@ -1406,7 +1406,7 @@
                 },
                 {
                     "map_type": "Alternative",
-                    "position": -3
+                    "position": 0
                 },
                 {
                     "map_type": "ParameterValueType",
@@ -1419,7 +1419,7 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
-                    "position": 0
+                    "position": 1
                 },
                 {
                     "map_type": "IndexName",
@@ -1427,7 +1427,7 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
-                    "position": 1
+                    "position": 2
                 },
                 {
                     "map_type": "ExpandedValue",
@@ -1484,7 +1484,7 @@
                 },
                 {
                     "map_type": "Alternative",
-                    "position": -3
+                    "position": 1
                 },
                 {
                     "map_type": "ParameterValueType",
@@ -1504,7 +1504,7 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
-                    "position": 1
+                    "position": 3
                 },
                 {
                     "map_type": "IndexName",
@@ -1512,7 +1512,7 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
-                    "position": 2
+                    "position": 4
                 },
                 {
                     "map_type": "ExpandedValue",
@@ -1639,7 +1639,7 @@
                 },
                 {
                     "map_type": "Alternative",
-                    "position": -2
+                    "position": 0
                 },
                 {
                     "map_type": "ParameterValueType",
@@ -1652,7 +1652,7 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
-                    "position": 0
+                    "position": 1
                 },
                 {
                     "map_type": "IndexName",
@@ -1660,7 +1660,7 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
-                    "position": 1
+                    "position": 2
                 },
                 {
                     "map_type": "ExpandedValue",
@@ -1771,114 +1771,12 @@
                 },
                 {
                     "map_type": "Alternative",
-                    "position": -2
+                    "position": 0
                 },
                 {
                     "map_type": "ParameterValueType",
                     "position": "hidden",
                     "filter_re": "2d_map"
-                },
-                {
-                    "map_type": "IndexName",
-                    "position": "hidden"
-                },
-                {
-                    "map_type": "ParameterValueIndex",
-                    "position": 0
-                },
-                {
-                    "map_type": "IndexName",
-                    "position": "hidden"
-                },
-                {
-                    "map_type": "ParameterValueIndex",
-                    "position": 1
-                },
-                {
-                    "map_type": "ExpandedValue",
-                    "position": 6
-                }
-            ],
-            "enabled": true,
-            "always_export_header": true,
-            "group_fn": "no_group",
-            "use_fixed_table_name": true
-        },
-        "Reserve_sdt": {
-            "type": "entity_parameter_values",
-            "mapping": [
-                {
-                    "map_type": "FixedValue",
-                    "position": "table_name",
-                    "value": "reserve_t"
-                },
-                {
-                    "map_type": "EntityClass",
-                    "position": "hidden",
-                    "filter_re": "^unit__reserve__upDown__node$"
-                },
-                {
-                    "map_type": "Dimension",
-                    "position": "hidden"
-                },
-                {
-                    "map_type": "Dimension",
-                    "position": "hidden"
-                },
-                {
-                    "map_type": "Dimension",
-                    "position": "hidden"
-                },
-                {
-                    "map_type": "Dimension",
-                    "position": "hidden"
-                },
-                {
-                    "map_type": "ParameterDefinition",
-                    "position": "hidden",
-                    "filter_re": "^reservation_t$"
-                },
-                {
-                    "map_type": "ParameterValueList",
-                    "position": "hidden",
-                    "ignorable": true
-                },
-                {
-                    "map_type": "Entity",
-                    "position": "hidden"
-                },
-                {
-                    "map_type": "Element",
-                    "position": -1
-                },
-                {
-                    "map_type": "Element",
-                    "position": -2
-                },
-                {
-                    "map_type": "Element",
-                    "position": -3
-                },
-                {
-                    "map_type": "Element",
-                    "position": -4
-                },
-                {
-                    "map_type": "Alternative",
-                    "position": -5
-                },
-                {
-                    "map_type": "ParameterValueType",
-                    "position": "hidden",
-                    "filter_re": "3d_map"
-                },
-                {
-                    "map_type": "IndexName",
-                    "position": "hidden"
-                },
-                {
-                    "map_type": "ParameterValueIndex",
-                    "position": 0
                 },
                 {
                     "map_type": "IndexName",
@@ -1898,7 +1796,7 @@
                 },
                 {
                     "map_type": "ExpandedValue",
-                    "position": 7
+                    "position": 6
                 }
             ],
             "enabled": true,
@@ -2139,7 +2037,7 @@
                 },
                 {
                     "map_type": "Alternative",
-                    "position": -4
+                    "position": 0
                 },
                 {
                     "map_type": "ParameterValueType",
@@ -2152,7 +2050,7 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
-                    "position": 0
+                    "position": 1
                 },
                 {
                     "map_type": "IndexName",
@@ -2160,7 +2058,7 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
-                    "position": 1
+                    "position": 2
                 },
                 {
                     "map_type": "ExpandedValue",
@@ -2213,23 +2111,23 @@
                 },
                 {
                     "map_type": "ParameterValueIndex",
+                    "position": -4
+                },
+                {
+                    "map_type": "IndexName",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "ParameterValueIndex",
+                    "position": -5
+                },
+                {
+                    "map_type": "IndexName",
+                    "position": "hidden"
+                },
+                {
+                    "map_type": "ParameterValueIndex",
                     "position": 0
-                },
-                {
-                    "map_type": "IndexName",
-                    "position": "hidden"
-                },
-                {
-                    "map_type": "ParameterValueIndex",
-                    "position": 1
-                },
-                {
-                    "map_type": "IndexName",
-                    "position": "hidden"
-                },
-                {
-                    "map_type": "ParameterValueIndex",
-                    "position": 2
                 },
                 {
                     "map_type": "ExpandedValue",

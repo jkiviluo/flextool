@@ -33,6 +33,11 @@
                     "type": "path",
                     "relative": true,
                     "path": ".spinetoolbox/specifications/Exporter/results_to_excel.json"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Exporter/reserves.json"
                 }
             ],
             "Tool": [
@@ -287,19 +292,19 @@
                     "known_filters": {
                         "db_url@Input_data": {
                             "scenario_filter": {
-                                "base": true,
+                                "base": false,
+                                "forced": true,
                                 "invest": true,
-                                "invest_cheap_PV": false,
-                                "test": false
+                                "no_inertia": true
                             },
                             "alternative_filter": {
-                                "Base": true,
                                 "base": true,
                                 "base_2030": true,
                                 "cheap_PV": true,
+                                "forced": true,
                                 "invest": true,
-                                "p2025": true,
-                                "p2030": true,
+                                "no_inertia": true,
+                                "reserve": true,
                                 "test": true
                             }
                         }
@@ -426,6 +431,40 @@
                 },
                 "filter_settings": {
                     "known_filters": {},
+                    "auto_online": true,
+                    "enabled_filter_types": {
+                        "alternative_filter": false,
+                        "scenario_filter": true
+                    }
+                }
+            },
+            {
+                "name": "from Results to export_reserve",
+                "from": [
+                    "Results",
+                    "bottom"
+                ],
+                "to": [
+                    "export_reserve",
+                    "right"
+                ],
+                "filter_settings": {
+                    "known_filters": {
+                        "db_url@Results": {
+                            "scenario_filter": {
+                                "base": false,
+                                "forced": false,
+                                "invest": false,
+                                "no_inertia": false
+                            },
+                            "alternative_filter": {
+                                "base__Import_results@2025-01-11T19:48:58": true,
+                                "forced__Import_results@2025-01-11T21:53:44": true,
+                                "invest__Import_results@2025-01-11T21:53:44": true,
+                                "no_inertia__Import_results@2025-01-11T21:53:44": true
+                            }
+                        }
+                    },
                     "auto_online": true,
                     "enabled_filter_types": {
                         "alternative_filter": false,
@@ -653,6 +692,21 @@
                     true
                 ]
             ]
+        },
+        "export_reserve": {
+            "type": "Exporter",
+            "description": "",
+            "x": 254.06889397716935,
+            "y": 145.47493122886308,
+            "output_time_stamps": false,
+            "cancel_on_error": true,
+            "output_labels": [
+                {
+                    "in_label": "db_url@Results",
+                    "out_label": "Results_exported@export_reserve"
+                }
+            ],
+            "specification": "reserves"
         }
     }
 }

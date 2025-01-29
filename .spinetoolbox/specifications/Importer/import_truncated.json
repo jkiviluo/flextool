@@ -2864,6 +2864,58 @@
                         ]
                     }
                 }
+            ],
+            "retire": [
+                {
+                    "Mapping 1": {
+                        "mapping": [
+                            {
+                                "map_type": "EntityClass",
+                                "position": "hidden",
+                                "value": "unit"
+                            },
+                            {
+                                "map_type": "Entity",
+                                "position": 0
+                            },
+                            {
+                                "map_type": "EntityMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 1
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "hidden",
+                                "value": "existing"
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValueType",
+                                "position": "hidden",
+                                "value": "map"
+                            },
+                            {
+                                "map_type": "IndexName",
+                                "position": "hidden",
+                                "value": "period"
+                            },
+                            {
+                                "map_type": "ParameterValueIndex",
+                                "position": -1
+                            },
+                            {
+                                "map_type": "ExpandedValue",
+                                "position": "hidden"
+                            }
+                        ]
+                    }
+                }
             ]
         },
         "selected_tables": [
@@ -2889,7 +2941,8 @@
             "model_solves",
             "group_period",
             "constraint",
-            "reserve"
+            "reserve",
+            "retire"
         ],
         "table_options": {
             "nodes": {
@@ -2953,7 +3006,8 @@
             "constraint": {},
             "reserve": {
                 "read_until_col": true
-            }
+            },
+            "retire": {}
         },
         "table_types": {
             "nodes": {
@@ -3277,6 +3331,12 @@
             },
             "rep_weeks": {
                 "0": "string"
+            },
+            "retire": {
+                "0": "string",
+                "1": "string",
+                "2": "float",
+                "3": "float"
             }
         },
         "table_default_column_type": {
